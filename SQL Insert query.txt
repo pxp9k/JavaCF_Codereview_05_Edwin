@@ -1,0 +1,8 @@
+INSERT INTO customers(customer_id, email, first_name, last_name, pwd)
+VALUES(1,"John@sowieso.at", "Johnny", "Doe", "1234");
+
+INSERT INTO customers(customer_id, email, first_name, last_name, pwd)
+VALUES(2,"Jane@sowieso.at", "Jane", "Doe", "12345");
+
+INSERT INTO cars(manufacturer, model, location)
+VALUES("Tesla", "T9000", "SomewhereOnThisPlanet");

@@ -1,0 +1,12 @@
+-- Select all bookings with pickup location "Oper"
+SELECT * FROM bookings
+WHERE pickup_location = 'Oper';
+
+-- Select all customers and sort by first name
+SELECT * FROM customers ORDER BY first_name;
+
+-- Select all nearly empty cars
+SELECT * FROM cars WHERE fuel < 5;
+
+-- Left join to select all bookings and bills (even if there is no booking)
+SELECT * FROM bookings LEFT JOIN bills ON fk_booking_id;

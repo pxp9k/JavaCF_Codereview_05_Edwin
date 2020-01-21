@@ -1,0 +1,26 @@
+1) 15/25
+2) 25/45
+4) 0/20
+
+
+1) Added "Basic Scheme" drawing (+10)
+   Added structure
+
+2) Added foreign keys, updated several datatypes from varchar to int (+10)
+
+4) (+20)
+
+Added this queries to test the DB:
+
+// Select all bookings:
+SELECT * FROM bookings
+
+// Select all customers and sort by first name
+SELECT * FROM `customers` ORDER BY first_name;
+
+// Create a new Booking:
+INSERT INTO `bookings` (`booking_id`, `customer_id`, `car_id`, `rentstatus`, `pickup_location`, `return_location`, `rental_start`, `rental_end`) VALUES ('1', '1', '1', '1', 'Volksoper', 'Stadtpark', '2020-01-01 00:00:00.000000', '2020-01-03 00:00:00.000000');
+
+// Find all bookings that have Volksoper as a pickup_location
+SELECT * FROM `bookings` WHERE pickup_location = 'Volksoper'
+
